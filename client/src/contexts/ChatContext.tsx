@@ -1,7 +1,8 @@
 import React, { createContext, useContext, useReducer, useEffect } from "react";
 import { Message } from "@shared/schema";
 import { ActionType, ChatAction, ChatContextProps, ChatState } from "@/lib/types";
-import { apiRequest, generateSystemPrompt } from "@/lib/utils";
+import { apiRequest } from "@/lib/apiRequest";
+import { generateSystemPrompt } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 
 // Initial welcome message from the assistant
